@@ -248,6 +248,47 @@
     font-size: 0.9rem;
   }
 
+  .install-section {
+    width: 100%;
+    max-width: 420px;
+    margin-top: 24px;
+  }
+
+  .install-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 18px 22px;
+    background: rgba(201, 169, 110, 0.08);
+    border: 1px solid rgba(201, 169, 110, 0.2);
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .install-card:hover {
+    background: rgba(201, 169, 110, 0.14);
+    border-color: rgba(201, 169, 110, 0.35);
+  }
+
+  .qr-code {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+  }
+
+  .install-title {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #f0d9a0;
+    margin-bottom: 4px;
+  }
+
+  .install-desc {
+    font-size: 0.8rem;
+    color: #8a8ab0;
+  }
+
   @media (max-width: 480px) {
     .next-prayer-card { padding: 22px 24px; }
     .next-prayer-card .countdown { font-size: 2.4rem; }
@@ -272,6 +313,16 @@
   <div class="loading">
     <div class="spinner"></div>
     <div style="color:#8a8ab0; font-size:0.9rem;">Calculating prayer times...</div>
+  </div>
+</div>
+
+<div class="install-section" id="installSection">
+  <div class="install-card">
+    <img src="qrcode.png" alt="QR Code" class="qr-code">
+    <div class="install-text">
+      <div class="install-title">Install on your phone</div>
+      <div class="install-desc">Scan this QR code to get the app</div>
+    </div>
   </div>
 </div>
 
